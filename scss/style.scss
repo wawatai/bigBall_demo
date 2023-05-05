@@ -61,7 +61,7 @@ a {
 html {
     width: 100%;
     height: 100%;
-    background: #002047;
+    background: #e3cc97;
 
     body {
         width: 100%;
@@ -86,40 +86,27 @@ html {
                     width: 50%;
                     height: 100%;
                     position: relative;
-                   
-                    .object1 {
-                        width: 667px;
-                        height: 1000px;
-                        background: url(../images/object1.png) no-repeat center;
-                        background-size: 100%;
-                        position: absolute;
-                        top: 0px;
-                        left: 0px;
-                        // opacity: 0;
-                        animation: l_side 0.2s 0.2s ease-in-out;
-                    }
 
-                    .object3 {
-                        width: 525px;
-                        height: 920px;
-                        background: url(../images/object3.png) no-repeat center;
+                    .mainobjectL {
+                        width: 828px;
+                        height: 953px;
+                        background: url(../images/mainObject_left.png) no-repeat center;
                         background-size: 100%;
                         position: absolute;
-                        top: 61px;
-                        left: 241px;
-                        animation: lag 0.5s, o3 0.4s 0.5s ease-in-out;
-                    }
+                        top: 38px;
+                        right: 41px;
+                        animation: lag 0.2s 0.2s linear,  l_side 0.6s 0.2s linear;
 
-                    .object3_s {
-                        width: 525px;
-                        height: 920px;
-                        background: url(../images/object3.png) no-repeat center;
-                        background-size: 100%;
-                        position: absolute;
-                        top: 71px;
-                        left: 251px;
-                        opacity: 0;
-                        animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow1 0.6s 0.7s ease-in-out;;
+                        &.shadow {
+                            width: 828px;
+                            height: 953px;
+                            background: url(../images/mainObject_left.png) no-repeat center;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 38px;
+                            right: 41px;
+                            animation: lag 0.2s 0.2s linear,  l_side 0.6s 0.2s linear ,  gone 0.6s 0.8s ease-in-out;
+                        }
                     }
                 }
 
@@ -129,137 +116,125 @@ html {
                     position: relative;
 
                     .logo {
-                        width: 323px;
-                        height: 164px;
+                        width: 538px;
+                        height: 234px;
                         background: url('../images/logo.png') no-repeat;
                         background-size: 100%;
                         position: absolute;
-                        top: 18px;
-                        left: -162px;
+                        top: 16px;
+                        left: -314px;
                     }
 
                     .inputBox {
-                        width: 335px;
-                        height: 173px;
-                        background: url('../images/inputBG.png') no-repeat center;
+                        width: 456px;
+                        height: 213px;
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 11px 10px 0 0;
+                        padding: 17px 42px;
+                        box-sizing: border-box;
+                        background: #0c1638dc;
+                        border: 3px solid;
+                        border-image: linear-gradient(to top, #f0f0f0 0%, #8f8f8f 49%, #ffffff 50%, #e6e6e6 100%)1;
                         position: absolute;
-                        top: 183px;
-                        left: -165px;
+                        top: 252px;
+                        left: -277px;
 
-                        label {
-                            width: 80%;
-                            height: 46px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            margin: 0 0 10px 0;
-    
-                            &:nth-of-type(2) {
-                                margin: 0 0 20px 0;
-                            }
+                        div {
 
-                            .logIcon {
-                                width: 25px;
-                                height: 25.5px;
-                                margin-right: 10px;
-                                background-size: 100%;
-                            }
+                            label {
+                                display: block;
+                                width: 215px;
+                                height: 46px;
+                                margin: 0 0 10px 0;
         
-                            input {
-                                width: 100%;
-                                height: 41px;
-                                background: #142329;
-                                border: 1px solid #22e8ff;
-                                box-shadow: inset 1px 1px 7px #0000006b,
-                                            inset -1px -1px 7px #0000006b;
-                                color: #ffffff;
-                                font-size: 20px;
-                                padding: 17px 15px;
-                                box-sizing: border-box;
-        
-                                &::placeholder {
-                                    color: #ffffff;
+                                &:nth-of-type(2) {
+                                    margin: 0 0 20px 0;
                                 }
-
-                                &:focus {
-                                    border: 2px solid #da0f12;
-                                    box-shadow: 1px 1px 15px #ff4431;
+            
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: linear-gradient(to bottom, #e3e3e3 0%, #f9f9f9 61%);
+                                    border-radius: 5px;
+                                    border: solid 2px #ffffff;
+                                    color: #616169;
+                                    font-size: 20px;
+                                    padding: 17px 15px;
+                                    box-sizing: border-box;
+            
+                                    &::placeholder {
+                                        color: #616169;
+                                    }
                                 }
                             }
                         }
+                        
         
                         button {
-                            width: 343px;
-                            height: 122px;
-                            background: url(../images/loginbtn.png) no-repeat center;
+                            width: 125px;
+                            height: 103px;
+                            background: linear-gradient(to top,#e6203c 2%, #9e0925 50%, #e6203c 100%);
+                            border-radius: 10px;
+                            box-shadow: 0 5px 10px 2px #00000080;
                             color: #ffffff;
-                            font-size: 30px;
+                            font-size: 29px;
                             font-weight: bold;
-                            text-align: center;
-                            letter-spacing: 1px;
-                            padding-bottom: 10px;
-                            position: absolute;
-                            top: 162px;
-                            left: -10px;
+                            letter-spacing: 8px;
+                            margin-left: 26px;
+                            position: relative;
                             z-index: 3;
+                            padding: 29px 0 29px 11px;
 
                             &:hover,&:active,&.active {
-                                background: url(../images/loginbtn_hov.png) no-repeat center;
+                                background: linear-gradient(to bottom, #e3cc97 0%,#7d4a22 50%, #e3cc97 100%);
                             }
+                        }
+
+                        .buttonDeco {
+                            width: 129px;
+                            height: 107px;
+                            background: linear-gradient(to top,#dadada 0%, #999999 30%, #ffffff 50%, #999999 76%, #dadada 93%);
+                            border-radius: 12px;
+                            position: absolute;
+                            top: 15px;
+                            left: 281px;
+                            z-index: 2;
                         }
                     }
 
                     .union {
-                        width: 272px;
-                        height: 53px;
+                        width: 266px;
+                        height: 47px;
                         background: url(../images/union.png) no-repeat center;
                         background-size: 100%;
                         position: absolute;
-                        top: 276px;
-                        left: 30px;
+                        bottom: 20px;
+                        left: 92px;
                     }
 
-                    .object2 {
-                        width: 1487px;
-                        height: 1000px;
-                        background: url(../images/object2.png) no-repeat center;
+                    .mainobjectR {
+                        width: 798px;
+                        height: 941px;
+                        background: url(../images/mainObject_right.png) no-repeat center;
                         background-size: 100%;
                         position: absolute;
-                        top: 0px;
-                        right: 0px;
+                        top: 25px;
+                        left: 7px;
                         z-index: -1;
-                        animation: l_side 0.2s 0.2s linear;
+                        animation: lag 0.2s 0.2s linear,  r_side 0.6s 0.2s linear;
+                        
+                        &.shadow {
+                            width: 798px;
+                            height: 941px;
+                            background: url(../images/mainObject_right.png) no-repeat center;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 25px;
+                            left: 7px;
+                            z-index: -1;
+                            animation: lag 0.2s 0.2s linear,  r_side 0.6s 0.2s linear , gone 0.6s 0.8s ease-in-out;
+                        }
                     }
-
-                    .object4 {
-                        width: 476px;
-                        height: 731px;
-                        background: url(../images/object4.png) no-repeat center;
-                        background-size: 100%;
-                        position: absolute;
-                        top: 269px;
-                        right: 379px;
-                        z-index: -1;
-                        animation: lag 0.6s linear, r_side 0.3s 0.6s linear;
-                    }
-
-                    .object4_s {
-                        width: 476px;
-                        height: 731px;
-                        background: url(../images/object4.png) no-repeat center;
-                        background-size: 100%;
-                        position: absolute;
-                        top: 259px;
-                        right: 369px;
-                        z-index: -1;
-                        opacity: 0;
-                        animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow 0.6s 0.7s ease-in-out;
-                    }
+                    
                 }
             }
         }
@@ -274,20 +249,41 @@ html {
             background: url('../images/bg.png') no-repeat top center;
             z-index: -999;
         }
-        .bglight {
-            width: 1920px;
-            height: 1000px;
-            background: url(../images/lightBG.png) no-repeat top center;
-            background-size: 100%;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            animation: lag 0.8s ease-in-out, light 0.5s 0.8s ease-in-out;
-            z-index: -900;
-        }
     }
 }
+@keyframes r_side {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateX(-300%);
+    }
 
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0%);
+    }
+}
+@keyframes l_side {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateX(300%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0%);
+    }
+}
+@keyframes gone {
+    0% {
+        transform: scale(1.3);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
 @keyframes lag {
     0% {
         opacity: 0;
@@ -295,67 +291,5 @@ html {
 
     100% {
         opacity: 0;
-    }
-}
-
-@keyframes l_side {
-    0% {
-        transform: translateY(-200%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes o3 {
-    0% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes r_side {
-    0% {
-        transform: translateX(200%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-@keyframes shadow1 {
-    0% {
-        opacity: 0;
-        transform: translateX(-200%);
-    }
-    30% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(0%);
-    }
-}
-@keyframes shadow {
-    0% {
-        opacity: 0;
-        transform: translateX(200%);
-    }
-    30% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(0%);
-    }
-}
-
-@keyframes light {
-    0% {
-        transform: rotate(0deg) scale(0);
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
     }
 }
