@@ -1,10 +1,21 @@
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
+   v2.0 | 20110126
+   License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
-center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,22 +24,24 @@ center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, t
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "微軟正黑體";
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  width: 100%;
+  height: 100%;
   line-height: 1;
-}
-
-main {
-  display: block;
+  font-family: "微軟正黑體";
 }
 
 ol, ul {
@@ -39,7 +52,8 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -47,433 +61,149 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: "微軟正黑體";
 }
 
 button {
-  font-family: "微軟正黑體";
-  border: none;
-  outline: none;
   cursor: pointer;
+  outline: none;
+  border: none;
   padding: 0px;
+  font-family: "微軟正黑體";
 }
 
 select, input {
-  font-family: "微軟正黑體";
   outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "微軟正黑體";
 }
 
-a {
+main {
   display: block;
-  text-decoration: none;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 html {
   width: 100%;
   height: 100%;
-  background: #002047;
+  background: #fcee94;
 }
 html body {
   width: 100%;
-  min-width: 1000px;
-  height: 100%;
+  height: auto;
   overflow: hidden;
 }
 html body main {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-html body main article {
-  width: 100%;
-  min-width: 1000px;
-  height: 100%;
+html body main .wrap {
+  width: 1200px;
+  height: 500px;
   position: relative;
+  margin: 0 auto;
+}
+html body main .wrap .logo {
+  width: 495px;
+  height: 161px;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 59px;
+  top: 78px;
+  z-index: -1;
+}
+html body main .wrap .icon {
+  width: 642px;
+  height: 622px;
+  background: url("../img/icon.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: -16px;
+  top: 32px;
+  z-index: -1;
+}
+html body main .wrap form {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 384px;
+  left: 107px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-html body main article .left {
-  width: 50%;
-  height: 100%;
-  position: relative;
+html body main .wrap form label {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 14px;
 }
-html body main article .left .object1 {
-  width: 667px;
-  height: 1000px;
-  background: url(../images/object1.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  -webkit-animation: l_side 0.2s 0.2s ease-in-out;
-          animation: l_side 0.2s 0.2s ease-in-out;
+html body main .wrap form label:last-child {
+  margin: 0;
 }
-html body main article .left .object3 {
-  width: 525px;
-  height: 920px;
-  background: url(../images/object3.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 61px;
-  left: 241px;
-  -webkit-animation: lag 0.5s, o3 0.4s 0.5s ease-in-out;
-          animation: lag 0.5s, o3 0.4s 0.5s ease-in-out;
-}
-html body main article .left .object3_s {
-  width: 525px;
-  height: 920px;
-  background: url(../images/object3.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 71px;
-  left: 251px;
-  opacity: 0;
-  -webkit-animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow1 0.6s 0.7s ease-in-out;
-          animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow1 0.6s 0.7s ease-in-out;
-}
-html body main article .right {
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
-html body main article .right .logo {
-  width: 323px;
-  height: 164px;
-  background: url("../images/logo.png") no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 18px;
-  left: -162px;
-}
-html body main article .right .inputBox {
-  width: 335px;
-  height: 173px;
-  background: url("../images/inputBG.png") no-repeat center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 11px 10px 0 0;
-  position: absolute;
-  top: 183px;
-  left: -165px;
-}
-html body main article .right .inputBox label {
-  width: 80%;
-  height: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 10px 0;
-}
-html body main article .right .inputBox label:nth-of-type(2) {
-  margin: 0 0 20px 0;
-}
-html body main article .right .inputBox label .logIcon {
-  width: 25px;
-  height: 25.5px;
-  margin-right: 10px;
-  background-size: 100%;
-}
-html body main article .right .inputBox label input {
-  width: 100%;
-  height: 41px;
-  background: #142329;
-  border: 1px solid #22e8ff;
-  -webkit-box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.4196078431), inset -1px -1px 7px rgba(0, 0, 0, 0.4196078431);
-          box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.4196078431), inset -1px -1px 7px rgba(0, 0, 0, 0.4196078431);
+html body main .wrap form label input {
+  width: 246px;
+  height: 33px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ae7c39), color-stop(99%, #4a2600));
+  background: linear-gradient(to top, #ae7c39 0%, #4a2600 99%);
+  border: solid 1px #ffea9e;
+  border-radius: 5px;
   color: #ffffff;
+  font-size: 19px;
+  padding-left: 5px;
+}
+html body main .wrap form label input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+html body main .wrap form label input::-moz-placeholder {
+  color: #ffffff;
+}
+html body main .wrap form label input:-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main .wrap form label input::-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main .wrap form label input::placeholder {
+  color: #ffffff;
+}
+html body main .wrap form button {
+  width: 140px;
+  height: 77px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#782900), color-stop(15%, #d08f28), color-stop(30%, #974e00), color-stop(37%, #b05c01), color-stop(73%, #fff7be), color-stop(95%, #e9ae3a), to(#b03d01));
+  background: linear-gradient(to top, #782900 0%, #d08f28 15%, #974e00 30%, #b05c01 37%, #fff7be 73%, #e9ae3a 95%, #b03d01 100%);
+  border-radius: 5px;
+  border: solid 1px #f0ece5;
+  color: #000000;
   font-size: 20px;
-  padding: 17px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-html body main article .right .inputBox label input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::-moz-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input:-ms-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::-ms-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input:focus {
-  border: 2px solid #da0f12;
-  -webkit-box-shadow: 1px 1px 15px #ff4431;
-          box-shadow: 1px 1px 15px #ff4431;
-}
-html body main article .right .inputBox button {
-  width: 343px;
-  height: 122px;
-  background: url(../images/loginbtn.png) no-repeat center;
-  color: #ffffff;
-  font-size: 30px;
   font-weight: bold;
-  text-align: center;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
-  position: absolute;
-  top: 162px;
-  left: -10px;
-  z-index: 3;
+  margin-left: 24px;
 }
-html body main article .right .inputBox button:hover, html body main article .right .inputBox button:active, html body main article .right .inputBox button.active {
-  background: url(../images/loginbtn_hov.png) no-repeat center;
-}
-html body main article .right .union {
-  width: 272px;
-  height: 53px;
-  background: url(../images/union.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 276px;
-  left: 30px;
-}
-html body main article .right .object2 {
-  width: 1487px;
-  height: 1000px;
-  background: url(../images/object2.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: -1;
-  -webkit-animation: l_side 0.2s 0.2s linear;
-          animation: l_side 0.2s 0.2s linear;
-}
-html body main article .right .object4 {
-  width: 476px;
-  height: 731px;
-  background: url(../images/object4.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 269px;
-  right: 379px;
-  z-index: -1;
-  -webkit-animation: lag 0.6s linear, r_side 0.3s 0.6s linear;
-          animation: lag 0.6s linear, r_side 0.3s 0.6s linear;
-}
-html body main article .right .object4_s {
-  width: 476px;
-  height: 731px;
-  background: url(../images/object4.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 259px;
-  right: 369px;
-  z-index: -1;
-  opacity: 0;
-  -webkit-animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow 0.6s 0.7s ease-in-out;
-          animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow 0.6s 0.7s ease-in-out;
+html body main .wrap form button:hover, html body main .wrap form button:active, html body main .wrap form button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff7c4), color-stop(14%, #e9ae3a), color-stop(52%, #974e00), color-stop(75%, #782900), to(#461800));
+  background: linear-gradient(to top, #fff7c4 0%, #e9ae3a 14%, #974e00 52%, #782900 75%, #461800 100%);
+  color: #ffffff;
 }
 html body .bg {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  min-width: 1000px;
-  height: 100%;
-  background: url("../images/bg.png") no-repeat top center;
+  background: url("../img/bg.jpg") no-repeat top center;
   z-index: -999;
-}
-html body .bglight {
-  width: 1920px;
-  height: 1000px;
-  background: url(../images/lightBG.png) no-repeat top center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  -webkit-animation: lag 0.8s ease-in-out, light 0.5s 0.8s ease-in-out;
-          animation: lag 0.8s ease-in-out, light 0.5s 0.8s ease-in-out;
-  z-index: -900;
-}
-
-@-webkit-keyframes lag {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes lag {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes l_side {
-  0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes l_side {
-  0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes o3 {
-  0% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes o3 {
-  0% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes r_side {
-  0% {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes r_side {
-  0% {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes shadow1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes shadow1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes light {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0);
-            transform: rotate(0deg) scale(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
-}
-@keyframes light {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0);
-            transform: rotate(0deg) scale(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
 }
