@@ -46,7 +46,7 @@ html{
                 position: absolute;
                 top: 146px;
                 left: -184px;
-                animation: img_1 1s linear .5s;
+                animation: img_1 .5s linear .5s;
                 animation-fill-mode:both;
             }
 
@@ -154,19 +154,19 @@ html{
 @keyframes img_1{
 
     0%{
-        transform:translateX(100%)translateY(20%) scaleX(1.02) scaleY(0.95);
+        transform:translateX(50%)translateY(-10%) scaleX(1.02) scaleY(0.95);
         opacity: 0;
     }
-    20%{
-        transform:translateX(-40%)translateY(-1%) scaleX(1.1) scaleY(1);
-        opacity: 1;
+    30% {
+        transform:translateX(20%)translateY(0%) scaleX(1.05) scaleY(0.95);
+        opacity: 0.5;
     }
     50%{
-        transform:translateX(10%)translateY(-1%) scaleX(1.02) scaleY(0.95);
-        opacity: 0.8;
+        transform:translateX(-1%)translateY(0%) scaleX(1) scaleY(1);
+        opacity: 1;
     }
     60%{
-        transform:translateX(-20%)translateY(-5%) scaleX(1.02) scaleY(0.95);
+        transform:translateX(1%)translateY(0%) scaleX(1) scaleY(1);
         opacity: 1;
     }
     100% {
