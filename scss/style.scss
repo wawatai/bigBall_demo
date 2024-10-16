@@ -170,7 +170,8 @@ html {
                         position: absolute;
                         top: 70px;
                         left: -132px;
-                        animation: movingX .2s ease 1.5s 1 normal backwards;
+                        // animation: movingX .2s ease 1.5s 1 normal backwards;
+                        animation: movingX .2s ease 0s 1 normal backwards;
                     }
                     .ob_b{
                         background: url('../images/ob_b.png') no-repeat;
@@ -180,7 +181,8 @@ html {
                         position: absolute;
                         top: 235px;
                         left: -252px;
-                        animation: movingB .2s ease-in-out 1.5s 1 normal backwards;
+                        // animation: movingB .2s ease-in-out 1.5s 1 normal backwards;
+                        animation: movingB .2s ease-in-out 0s 1 normal backwards;
                     }
                 }
             }

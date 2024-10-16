@@ -204,8 +204,8 @@ html body main article .right .ob_m {
   position: absolute;
   top: 70px;
   left: -132px;
-  -webkit-animation: movingX 0.2s ease 1.5s 1 normal backwards;
-          animation: movingX 0.2s ease 1.5s 1 normal backwards;
+  -webkit-animation: movingX 0.2s ease 0s 1 normal backwards;
+          animation: movingX 0.2s ease 0s 1 normal backwards;
 }
 html body main article .right .ob_b {
   background: url("../images/ob_b.png") no-repeat;
@@ -215,8 +215,8 @@ html body main article .right .ob_b {
   position: absolute;
   top: 235px;
   left: -252px;
-  -webkit-animation: movingB 0.2s ease-in-out 1.5s 1 normal backwards;
-          animation: movingB 0.2s ease-in-out 1.5s 1 normal backwards;
+  -webkit-animation: movingB 0.2s ease-in-out 0s 1 normal backwards;
+          animation: movingB 0.2s ease-in-out 0s 1 normal backwards;
 }
 html body .bg {
   background: url("../images/bg.png") no-repeat;
